@@ -16,41 +16,41 @@ const Banner = () => {
             <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                     <img
-                        style={{height:'550px'}}
+                        style={{ height: '550px' }}
                         className="d-block w-100"
                         src={banner1}
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>Dentistry</h3>
+                        <p>the profession concerned with the prevention and treatment of oral disease.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        style={{height:'550px'}}
+                        style={{ height: '550px' }}
                         className="d-block w-100"
                         src={banner2}
                         alt="Second slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Therapiya</h3>
+                        <p>provides preventive and restorative dental care for children and adults.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        style={{height:'550px'}}
+                        style={{ height: '550px' }}
                         className="d-block w-100"
                         src={banner3}
                         alt="Third slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
+                        <h3>Virology</h3>
                         <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                            A viral disease of the oral cavity is the infectious type of pathology affecting oral tissues.
                         </p>
                     </Carousel.Caption>
                 </Carousel.Item>
