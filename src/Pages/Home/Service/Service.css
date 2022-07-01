@@ -1,0 +1,13 @@
+.service-container{
+    text-align: center;
+    padding: 10px;
+}
+
+.service-container img{
+    height: 250px;
+    border-radius: 10px;
+}
+
+.service-about{
+    text-align: justify;
+}
