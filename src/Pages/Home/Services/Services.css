@@ -1,13 +1,13 @@
+.services-section{
+    background-color: rgb(233, 239, 245);
+    margin-top: 0;
+}
+
 .services-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.services-section{
-    background-color: rgb(245, 245, 235);
-    margin-top: 0;
 }
 
 .services-title{

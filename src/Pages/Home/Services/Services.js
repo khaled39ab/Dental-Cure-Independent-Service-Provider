@@ -15,8 +15,8 @@ const Services = () => {
     return (
         <div id='services' className='services-section'>
             <div className='container'>
-                <h1 className='py-4 text-center services-title'>Our Services</h1>
-                <div className='services-container'>
+                <h1 className='pt-4 text-center services-title'>Treatments</h1>
+                <div className='services-container pb-5'>
                     {
                         services.map(service => <Service
                             key={service.id}
