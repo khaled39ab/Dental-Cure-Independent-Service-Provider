@@ -1,0 +1,44 @@
+[
+    {
+      "id": "62bf0087df1f2e1b2263ab9f",
+      "price": "$975",
+      "img": "https://i.ibb.co/WyyW3Hg/braces1.png",
+      "name": "Braces/Invisalign",
+      "about": "Braces are orthodontic or dental devices responsible for straightening crooked teeth or malocclusion for the most part. They can make your teeth align so you won’t have a prominent underbite, scissor-bite, or overbite."
+    },
+    {
+      "id": "62bf00877301bd210aa300ab",
+      "price": "$850",
+      "img": "https://i.ibb.co/jJsc9JY/crown1.png",
+      "name": "Dental Crown",
+      "about": "A dental crown is a tooth-shaped cap that is placed over a tooth - to cover the tooth to restore its shape and size, strength, and improve its appearance."
+    },
+    {
+      "id": "62bf0087df43ca2effceeed5",
+      "price": "$370",
+      "img": "https://i.ibb.co/cF8yRJm/implants1.png",
+      "name": "Dental Implants",
+      "about": "Peoples suffer tooth loss - mostly due to tooth decay, periodontal disease, or injury. For many years, the only treatment options available for people with missing teeth were bridges and dentures."
+    },
+    {
+      "id": "62bf0087fd054a2907d77b3f",
+      "price": "$200",
+      "img": "https://i.ibb.co/TRKjGty/fillings1.png",
+      "name": "Dental Filling",
+      "about": "To treat a cavity your dentist will remove the decayed portion of the tooth and then fill the area on the tooth where the decayed material was removed."
+    },
+    {
+      "id": "62bf0087ef7dc3a18b180cb4",
+      "price": "$120",
+      "img": "https://i.ibb.co/6BcK7sG/tooth-extraction1.png",
+      "name": "Tooth Extractions",
+      "about": "Tooth extraction is a relatively quick outpatient procedure with either local, general, intravenous anesthesia, or a combination. Removing visible teeth is a simple extraction."
+    },
+    {
+      "id": "62bf0087a51a65409bbe0e09",
+      "price": "$325",
+      "img": "https://i.ibb.co/y5zdgRc/root-canal1.png",
+      "name": "Root Canal/Endodontics",
+      "about": "Root canal treatment is a dental procedure used to treat infection at the centre of a tooth. Root canal treatment is not painful and can save a tooth that might otherwise have to be removed completely."
+    }
+  ]
