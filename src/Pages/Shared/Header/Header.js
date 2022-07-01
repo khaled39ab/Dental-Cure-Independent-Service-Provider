@@ -4,11 +4,11 @@ import logo from '../../../images/logo.png'
 
 const Header = () => {
     return (
-        <Navbar sticky='top' className='fs-5 fw-semibold text-white' collapseOnSelect expand="lg" bg="info" variant="dark">
+        <Navbar sticky='top' className='fs-5 fw-bold text-info' collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
                 <Navbar.Brand href="#home">
-                    <img style={{borderRadius:'8px'}} src={logo} alt="" />
-                    <span>Dental Cure</span>
+                    <img style={{borderRadius:'8px', marginRight:'5px'}} src={logo} alt="" />
+                    <span style={{color:'green'}}>Dental Cure</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
