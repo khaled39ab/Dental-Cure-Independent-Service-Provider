@@ -10,8 +10,8 @@ const Service = ({ service }) => {
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
-                        <Card.Title className='text-info fw-bolder'>{name}</Card.Title>
-                        <Card.Subtitle className='my-2 text-primary fw-bolder'>{price}</Card.Subtitle>
+                        <Card.Title className='text-warning fw-bolder'>{name}</Card.Title>
+                        <Card.Subtitle className='my-2 text-info fw-bolder'>{price}</Card.Subtitle>
                         <Card.Text className='service-about'>
                             {about}
                         </Card.Text>

@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <Navbar sticky='top' className='fs-5 fw-bold text-info' collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/">
                     <img style={{borderRadius:'8px', marginRight:'5px'}} src={logo} alt="" />
                     <span style={{color:'green'}}>Dental Cure</span>
                 </Navbar.Brand>
@@ -16,9 +16,9 @@ const Header = () => {
                     </Nav>
                     <Nav>
                         <Nav.Link href="#services">Services</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link href="#memes">Dank memes</Nav.Link>
+                        <Nav.Link href="#blogs">Blogs</Nav.Link>
+                        <Nav.Link href="#aboutMe">About Me</Nav.Link>
+                        <Nav.Link href="#login">Log In</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
