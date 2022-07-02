@@ -1,13 +1,14 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SocialLogin from '../SocialLogIn/SocialLogin';
 import './LogIn.css'
 
 const LogIn = () => {
     return (
         <div>
             <div className='w-50 mx-auto px-3 py-4  my-3 border border-4 rounded-3'>
-            <h1 className='text-success text-center'>Please Log In</h1>
+                <h1 className='text-success text-center'>Please Log In</h1>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
@@ -25,13 +26,14 @@ const LogIn = () => {
                     <Button variant="link">Forget Password?</Button>
                     <hr />
                 </Form>
-                <div className='create-acc-btn'>
+                <div className='create-acc-btn mx-auto'>
                     <Link to={'/register'}>
                         <Button>
                             Create An Account
                         </Button>
                     </Link>
                 </div>
+                <SocialLogin></SocialLogin>
             </div>
         </div >
     );

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SocialLogin from '../SocialLogIn/SocialLogin';
 import './Register.css'
 
 const Register = () => {
@@ -76,6 +77,7 @@ const Register = () => {
                     </div>
                 </div>
             </Form>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
