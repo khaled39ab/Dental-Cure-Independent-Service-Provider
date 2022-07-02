@@ -5,6 +5,7 @@
     font-family: 'Josefin Sans', sans-serif;
     background-color: rgba(65,178,236,255);
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
 }
@@ -31,5 +32,13 @@
 @media only screen and (max-width: 600px) {
     .features-two-sec{
         flex-direction: column;
+    }
+
+    .features-two-title{
+        font-size: 24px;
+    }
+    
+    .features-two-btn{
+        font-size: 12px;
     }
 }
