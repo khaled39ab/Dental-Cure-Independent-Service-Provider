@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../../../images/logo.png'
+import CustomLink from '../CustomLink/CustomLink';
 
 const Header = () => {
     return (
@@ -15,10 +17,11 @@ const Header = () => {
                     <Nav className="me-auto">
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#services">Services</Nav.Link>
-                        <Nav.Link href="#blogs">Blogs</Nav.Link>
-                        <Nav.Link href="#aboutMe">About Me</Nav.Link>
-                        <Nav.Link href="#login">Log In</Nav.Link>
+                        <Nav.Link as={CustomLink} to="/home">Home</Nav.Link>
+                        <Nav.Link as={CustomLink} to="/services">Services</Nav.Link>
+                        <Nav.Link as={CustomLink} to="/blogs">Blogs</Nav.Link>
+                        <Nav.Link as={CustomLink} to="/aboutMe">About Me</Nav.Link>
+                        <Nav.Link as={CustomLink} to="/login">Log In</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
