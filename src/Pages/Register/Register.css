@@ -4,10 +4,6 @@
     font-weight: 500;
 }
 
-.reg-title{
-    color: rgb(92, 185, 95);
-}
-
 .btn-container{
     display: flex;
     justify-content: space-between;
