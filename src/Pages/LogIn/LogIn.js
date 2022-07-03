@@ -2,9 +2,12 @@ import React, { useEffect, useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogIn/SocialLogin';
+// import Tostify from '../Tostify';
+import 'react-toastify/dist/ReactToastify.css';
 import './LogIn.css'
 
 const LogIn = () => {
@@ -51,16 +54,16 @@ const LogIn = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            // toast('Sent email');
+            toast('Sent email');
         } else {
-            // toast('Enter Your Email')
+            toast('Enter Your Email First')
         }
     }
     return (
         <div>
             <div className='w-50 mx-auto px-3 py-4  my-3 border border-4 rounded-3'>
                 <h1 className='text-success text-center'>Please Log In</h1>
-                <Form>
+                <Form onSubmit={handleLogIn}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control ref={emailRef} name='email' type="email" placeholder="Enter email" />
@@ -77,7 +80,8 @@ const LogIn = () => {
                     <Button variant="primary" type="submit">
                         Log in
                     </Button>
-                    <Button variant="link">Forget Password?</Button>
+                    <Button onClick={handleResetPassword} variant="link">Forget Password?</Button>
+                    <ToastContainer />
                     <hr />
                 </Form>
                 <div className='create-acc-btn mx-auto'>
