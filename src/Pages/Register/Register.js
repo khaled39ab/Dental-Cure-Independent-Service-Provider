@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogIn/SocialLogin';
@@ -17,25 +18,32 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification:true});
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     const handleRegister = async e => {
         e.preventDefault();
+        const form = e.currentTarget;
+        if (form.checkValidity() === false) {
+            e.preventDefault();
+            e.stopPropagation();
+            setValidated(true)
+            return
+        }
+
         const firstName = e.target.firstName.value;
         const lastName = e.target.lastName.value;
         const name = firstName + ' ' + lastName;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(name, email, password);
 
         await createUserWithEmailAndPassword(email, password)
         await updateProfile({ displayName: name });
         navigate('/')
     }
 
-    if (loading || updating){
+    if (loading || updating) {
         return <Loading></Loading>
     }
 
@@ -45,7 +53,7 @@ const Register = () => {
     return (
         <div className='register-container w-50 p-4 m-4 mx-auto'>
             <h1 className='text-success text-center mb-4'>Want to Registration!</h1>
-            <Form noValidate validated={validated}  onSubmit={handleRegister}>
+            <Form noValidate validated={validated} onSubmit={handleRegister}>
                 <Row className="mb-3">
                     <Form.Group as={Col} md="6" controlId="validationCustom01">
                         <Form.Label>First name</Form.Label>
