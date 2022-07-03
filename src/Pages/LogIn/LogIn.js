@@ -6,7 +6,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogIn/SocialLogin';
-// import Tostify from '../Tostify';
 import 'react-toastify/dist/ReactToastify.css';
 import './LogIn.css'
 
