@@ -1,20 +1,57 @@
 import React, { useState } from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
+import Loading from '../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogIn/SocialLogin';
 import './Register.css'
 
 const Register = () => {
     const [validated, setValidated] = useState(false);
+    const navigate = useNavigate();
+
+    let errorElement;
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification:true});
+
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
+    const handleRegister = async e => {
+        e.preventDefault();
+        const firstName = e.target.firstName.value;
+        const lastName = e.target.lastName.value;
+        const name = firstName + ' ' + lastName;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        console.log(name, email, password);
+
+        await createUserWithEmailAndPassword(email, password)
+        await updateProfile({ displayName: name });
+        navigate('/')
+    }
+
+    if (loading || updating){
+        return <Loading></Loading>
+    }
+
+    if (error) {
+        errorElement = <p className='text-danger text-center'>Error: {error?.message}</p>
+    }
     return (
         <div className='register-container w-50 p-4 m-4 mx-auto'>
             <h1 className='text-success text-center mb-4'>Want to Registration!</h1>
-            <Form noValidate validated={validated}>
+            <Form noValidate validated={validated}  onSubmit={handleRegister}>
                 <Row className="mb-3">
                     <Form.Group as={Col} md="6" controlId="validationCustom01">
                         <Form.Label>First name</Form.Label>
                         <Form.Control
                             required
+                            name='firstName'
                             type="text"
                             placeholder="First name"
                         />
@@ -24,6 +61,7 @@ const Register = () => {
                         <Form.Label>Last name</Form.Label>
                         <Form.Control
                             required
+                            name='lastName'
                             type="text"
                             placeholder="Last name"
                         />
@@ -32,14 +70,14 @@ const Register = () => {
                 </Row>
                 <Form.Group className="mb-3" as={Col} controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" required />
+                    <Form.Control name='email' type="email" placeholder="Enter email" required />
                     <Form.Control.Feedback type="invalid">
                         Please provide a valid email.
                     </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" as={Col} controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" required />
+                    <Form.Control name='password' type="password" placeholder="Password" required />
                     <Form.Text className="text-muted">
                         Password should minimum 6 character with 1 special character.
                     </Form.Text>
@@ -66,7 +104,7 @@ const Register = () => {
                 </Form.Group>
 
                 <div className='btn-container mt-4'>
-                    <Button type="submit">Sign Up</Button>
+                    <Button type="submit">Register</Button>
                     <div className='logIn-sec'>
                         <p>Already have an account?</p>
                         <div>
@@ -77,6 +115,9 @@ const Register = () => {
                     </div>
                 </div>
             </Form>
+            {
+                errorElement
+            }
             <SocialLogin></SocialLogin>
         </div>
     );
