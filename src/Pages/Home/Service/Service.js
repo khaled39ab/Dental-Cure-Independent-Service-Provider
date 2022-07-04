@@ -7,8 +7,8 @@ const Service = ({ service }) => {
     const { id, name, img, price, about } = service;
     const navigate = useNavigate();
 
-    const navigateToAppointment = id =>{
-        navigate(`/services/${id}`)
+    const navigateToAppointment = ( id ) =>{
+        navigate(`/service/${id}`)
     }
     return (
         <div>
@@ -21,7 +21,7 @@ const Service = ({ service }) => {
                         <Card.Text className='service-about'>
                             {about}
                         </Card.Text>
-                        <Button onClick={()=>navigateToAppointment(id)} variant="primary">Appointment Now</Button>
+                        <Button onClick={()=>navigateToAppointment( id )} variant="primary">Appointment Now</Button>
                     </Card.Body>
                 </Card>
             </div>
