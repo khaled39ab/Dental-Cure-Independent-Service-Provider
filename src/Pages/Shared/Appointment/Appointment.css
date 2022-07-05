@@ -4,6 +4,10 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.appointment-form input{
+    height: 52px;
+}
+
 .send-btn{
     background-color: rgb(244, 90, 213);
     border: 0;

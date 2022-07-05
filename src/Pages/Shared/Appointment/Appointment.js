@@ -1,15 +1,22 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import { Button, Col, Form, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import './Appointment.css'
 
 const Appointment = () => {
-    const { id } = useParams();
+    const navigate = useNavigate();
+
+    const handleSendMessage = () =>{
+        navigate('/');
+        toast('Thanks for Your Appointment')
+    }
+
     return (
         <div>
-            <div className='container w-50 mt-5'>
+            <div className='container w-50 mt-5 appointment-form'>
                 <h1 className='request-title mb-4'>Request Appointment</h1>
-                <form >
+                <form onSubmit={handleSendMessage}>
                     <Row className="mb-3">
                         <Form.Group as={Col} md="6" controlId="validationCustom01">
                             <Form.Control
@@ -50,10 +57,10 @@ const Appointment = () => {
                             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
                     </Row>
-                    <Form.Group className="mb-3" as={Col} controlId="message.ControlTextarea1">
+                    <Form.Group className="mb-3 message-area" as={Col} controlId="message.ControlTextarea1">
                         <Form.Control
                             required
-                            as="textarea" rows={3}
+                            as="textarea" rows={6}
                             placeholder="Message"
                         />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>

@@ -9,7 +9,7 @@ const FeaturesTwo = () => {
     const navigate = useNavigate();
 
     const handleRequest = () =>{
-        // navigate('/services')
+        navigate('/login')
         toast('Select a Treatment Then Click to "Appointment"');
     }
     return (
