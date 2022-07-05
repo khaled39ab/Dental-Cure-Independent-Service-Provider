@@ -1,16 +1,14 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import requestLogo from '../../../images/requestLogo.png'
 import 'react-toastify/dist/ReactToastify.css';
 import './FeaturesTwo.css'
 
 const FeaturesTwo = () => {
-    const navigate = useNavigate();
 
     const handleRequest = () =>{
-        navigate('/')
-        toast('Select a Treatment Then Click to "Appointment"');
+        window.scrollTo({top: 570, left: 0, behavior: 'smooth'});
+        toast('Click on "Appointment Now"');
     }
     return (
         <div className='features-two-sec p-5 mt-5'>

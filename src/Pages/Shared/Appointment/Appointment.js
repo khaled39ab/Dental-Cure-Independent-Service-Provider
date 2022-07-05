@@ -8,8 +8,8 @@ const Appointment = () => {
     const navigate = useNavigate();
 
     const handleSendMessage = () =>{
-        navigate('/');
-        toast('Thanks for Your Appointment')
+        navigate('/')
+        toast('Thanks for Your Appointment');
     }
 
     return (
