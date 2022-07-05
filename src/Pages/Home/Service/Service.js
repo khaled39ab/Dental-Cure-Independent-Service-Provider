@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Card} from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import Appointment from '../../Shared/Appointment/Appointment';
 import './Service.css'
 
 const Service = ({ service }) => {

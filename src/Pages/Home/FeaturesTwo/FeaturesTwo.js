@@ -10,7 +10,7 @@ const FeaturesTwo = () => {
 
     const handleRequest = () =>{
         // navigate('/services')
-        toast('Select a Treatment and Click to "Appointment"');
+        toast('Select a Treatment Then Click to "Appointment"');
     }
     return (
         <div className='features-two-sec p-5 mt-5'>
