@@ -2,7 +2,7 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBox, faDatabase, faCloudArrowDown, faCloudArrowUp, faLink, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase, faCloudArrowDown, faCloudArrowUp, faLink, faLaptopCode, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 
 
 const Blogs = () => {
@@ -96,7 +96,7 @@ const Blogs = () => {
                     </ListGroup.Item>
                 </ListGroup>
                 <h3 className='text-info mt-5 mb-3'>Other options to implement authentication</h3>
-                <ul style={{listStyleType: 'square'}}>
+                <ul style={{ listStyleType: 'square' }}>
                     <li className='bg-success p-1'>
                         <p className='text-white'><span className='fs-5 text-decoration-underline'>Back4App:-</span> Back4app is an open-source, relational, low-code backend platform.</p>
                     </li>
@@ -109,7 +109,7 @@ const Blogs = () => {
                     <li className='bg-secondary p-1'>
                         <p className='text-white'><span className='fs-5 text-decoration-underline'>PubNub:-</span> PubNub is a realtime communication platform.</p>
                     </li>
-                    <li  className='bg-dark p-1'>
+                    <li className='bg-dark p-1'>
                         <p className='text-white'><span className='fs-5 text-decoration-underline'>Kumulos:-</span> Kumulos is a secure, easy-to-use, robust platform.</p>
                     </li>
                 </ul>
@@ -117,6 +117,16 @@ const Blogs = () => {
 
             <div className='my-5 pt-5'>
                 <h2> <span className='text-warning'>QUESTION:</span> What other services does firebase provide other than authentication?</h2>
+
+                <h4 className='text-info mt-5 mb-3'>There are many services which Firebase provides, Most useful of them are:</h4>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Cloud Firestore.</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Cloud Functions.</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Authentication.</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Hosting.</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Cloud Storage.</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Google Analytics.</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Predictions.</p>
+                <p><FontAwesomeIcon icon={faCircleCheck} /> Cloud Messaging.</p>
             </div>
         </div>
     );
