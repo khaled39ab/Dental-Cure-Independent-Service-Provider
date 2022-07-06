@@ -95,6 +95,24 @@ const Blogs = () => {
                         </div>
                     </ListGroup.Item>
                 </ListGroup>
+                <h3 className='text-info mt-5 mb-3'>Other options to implement authentication</h3>
+                <ul style={{listStyleType: 'square'}}>
+                    <li className='bg-success p-1'>
+                        <p className='text-white'><span className='fs-5 text-decoration-underline'>Back4App:-</span> Back4app is an open-source, relational, low-code backend platform.</p>
+                    </li>
+                    <li className='bg-warning p-1'>
+                        <p><span className='fs-5 text-decoration-underline'>Backendless:-</span> Backendless is highly scalable mobile backend-as-a-service platform.</p>
+                    </li>
+                    <li className='bg-primary p-1'>
+                        <p className='text-white'><span className='fs-5 text-decoration-underline'>Kuzzle:-</span> Kuzzle is a ready-to-use, on-premises backend platform.</p>
+                    </li>
+                    <li className='bg-secondary p-1'>
+                        <p className='text-white'><span className='fs-5 text-decoration-underline'>PubNub:-</span> PubNub is a realtime communication platform.</p>
+                    </li>
+                    <li  className='bg-dark p-1'>
+                        <p className='text-white'><span className='fs-5 text-decoration-underline'>Kumulos:-</span> Kumulos is a secure, easy-to-use, robust platform.</p>
+                    </li>
+                </ul>
             </div>
 
             <div className='my-5 pt-5'>
