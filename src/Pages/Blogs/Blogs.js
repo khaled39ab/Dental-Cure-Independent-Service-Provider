@@ -121,7 +121,6 @@ const Blogs = () => {
                 <h4 className='text-info mt-5 mb-3'>There are many services which Firebase provides, Most useful of them are:</h4>
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Cloud Firestore.</p>
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Cloud Functions.</p>
-                <p><FontAwesomeIcon icon={faCircleCheck} /> Authentication.</p>
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Hosting.</p>
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Cloud Storage.</p>
                 <p><FontAwesomeIcon icon={faCircleCheck} /> Google Analytics.</p>
