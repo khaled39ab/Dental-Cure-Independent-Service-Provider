@@ -86,9 +86,6 @@ const Register = () => {
                 <Form.Group className="mb-3" as={Col} controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
                     <Form.Control name='password' type="password" placeholder="Password" required />
-                    <Form.Text className="text-muted">
-                        Password should minimum 6 character with 1 special character.
-                    </Form.Text>
                     <Form.Control.Feedback type="invalid">
                         Please provide a valid password.
                     </Form.Control.Feedback>
