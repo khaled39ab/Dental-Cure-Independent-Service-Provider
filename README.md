@@ -7,7 +7,7 @@
 * This is an authentication based website.
 * Here user will be create account with email password or gmail/facebook/github.
 * After creating account user can take an appointment.
-* Where I use React framework. Also used some packages likes
+* Here I use React framework. Also used some packages likes
     * React Bootstrap
     * React fontawesome
     * React router dom
