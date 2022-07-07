@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogIn/SocialLogin';
@@ -47,7 +46,7 @@ const Register = () => {
         return <Loading></Loading>
     }
 
-    if (error) {
+    if (error || updateError) {
         errorElement = <p className='text-danger text-center'>Error: {error?.message}</p>
     }
     return (
