@@ -96,7 +96,7 @@ const Blogs = () => {
                     </ListGroup.Item>
                 </ListGroup>
                 <h3 className='text-info mt-5 mb-3'>Other options to implement authentication</h3>
-                <ul style={{ listStyleType: 'square' }}>
+                <ul style={{ listStyleType: 'square', color:'red'}}>
                     <li className='bg-success p-1'>
                         <p className='text-white'><span className='fs-5 text-decoration-underline'>Back4App:-</span> Back4app is an open-source, relational, low-code backend platform.</p>
                     </li>
