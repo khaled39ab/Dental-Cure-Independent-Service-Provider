@@ -30,15 +30,15 @@ const AboutMe = () => {
                                     <p class="skill-info">Skill</p>
                                     <span>HTML</span> <span class="pull-right">95%</span>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style={{width: '95%'}} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style={{ width: '95%' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <span>CSS3</span> <span class="pull-right">75%</span>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style={{width: '75%'}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style={{ width: '75%' }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style={{width: '90%'}} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" role="progressbar" style={{ width: '90%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
@@ -53,15 +53,15 @@ const AboutMe = () => {
                                         Hi, <br />
                                         I'm Khaled Bin Setab. I lives in Chapai Nawabgonj district of Bangladesh. I'm on going graduate on CIS subject from Daffodil International University. I've completed! Web development course with Jhankar Mahmub in https://www.programming-hero.com/.
                                     </p>
+                                    <h5 className="title-about-me">
+                                        Goals
+                                    </h5>
                                     <p className="lead">
-                                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-                                        porttitor volutpat. Vestibulum
-                                        ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                                        A major motivation for a web developer is self-expression in being able to design and develop a website and make sure users of the website have a good experience. Finally, a web designer hopes for career rewards, such as good pay and advancement. So as a developer I'll also responsible for different aspects of a site's creation.
                                     </p>
                                     <p className="lead">
-                                        Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                                        Nulla porttitor accumsan
-                                        tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span className='text-success'>Achieve goals:</span> Failure and doubt are abandoned. I'm determined, motivated and driven to really be successful at web development. <br />
+                                        First learn how to code, debug, and optimize. Then want skilled myself. Practice is the best friend of skill. There are no alternative of practice. So let's practice practice and practice...
                                     </p>
                                 </div>
                             </div>
