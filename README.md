@@ -1,4 +1,4 @@
-# Independent Service Provider (Dental Cure)
+# Dental Cure (Independent Service Provider)
 # Live Site: https://independent-service-prov-296b0.firebaseapp.com/
 ***
 ## Short description of the project.
